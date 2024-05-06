@@ -9,3 +9,7 @@ If we change only one of the ports, for example, the client port, an error will 
 However, when both the client and server have the same port, the application will run smoothly, just as before. This can be seen in the image below.
 ![img_2.png](img_2.png)
 
+## Latihan 2.3
+The result shown in the photo above was achieved by modifying the code in bin/server.rs as follows.
+![img_3.png](img_3.png)
+The change was made so that when `bcast.tx` (which is the sender) sends a message to each of its subscribers, the sender's IP address from that text will also be provided through the `addr` variable.
